@@ -1,0 +1,78 @@
+.TH  "APRIL -28- 2023" "version 1.0" "HolbertonSchool-Simple_Shell"
+.SH NAME
+Simple Shell - Simple Unix command language interpreter
+
+.SH SYPNOSIS
+.TP
+.B interactive format
+"./hsh"
+.TP
+.B non-interactive format
+"echo /bin/ls | ./hsh"
+
+.SH DESCRIPTION
+Simple shell is a command language interpreter written by Ken Thompson. It is designed to execute commands, and readfrom the standard input. The shell is a command line interface (CLI) program that takes commands from the keyboard and gives them to the operating system to perform. 
+
+
+
+.SH BUILTINS
+The builtin commands are:
+
+
+.TP CTRL+D:
+Terminate the shell process.
+
+
+.TP exit:
+Terminate the shell process.
+
+
+.TP env:
+Display all environment variables.
+
+- prints a list of files in the current director
+
+
+
+.SH EXAMPLE
+
+
+1) Example for executing 'ls' in Interactive mode
+
+  username@original-prompt:~$ ./hsh
+
+  $ ls
+
+  env-main.c  exec.c  fork.c  pid.c  ppid.c    prompt   prompt.c  shell_0.3
+
+
+2) Example for executing 'ls' in Non-Interactive mode
+
+  username@original-prompt:~$ echo 'ls' | ./hsh
+
+  env-main.c  exec.c  fork.c  pid.c  ppid.c    prompt   prompt.c  shell_0.3
+
+
+3) Example for terminating the shell
+
+  username@original-prompt:~$ ./hsh
+
+  $ exit
+
+  username@original-prompt:~$
+
+
+.SH INVOCATION
+
+.IP Interactive
+Simple shell can be invoked by typing ./hsh.
+
+
+.IP Non-Interactive
+Simple shell can also be invoked via a pipe (e.g. echo "/bin/ls" | ./hsh).
+
+.SH BUGS
+none known. 
+.SH AUTHORS
+
+
