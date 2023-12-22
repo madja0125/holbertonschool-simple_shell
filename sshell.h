@@ -14,8 +14,8 @@
 #include <dirent.h>
 #include <ctype.h>
 
-/* unused */
-int main(int ac __attribute__((unused)), char **av);
+/* main */
+int main(void);
 
 /* Shell User line functions */
 void prompt(void);
@@ -26,5 +26,6 @@ int check_for_builtins(char *command, char **args);
 int is_empty(const char *str);
 char *search_executable_in_path(const char *executable);
 void prompt(void);
+
 
 #endif
