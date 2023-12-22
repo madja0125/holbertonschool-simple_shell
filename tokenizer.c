@@ -69,6 +69,6 @@ char **parse_arguments(char *line)
 		free(tokens);
 		return (NULL);
 	}
-	tokens[pos] = NULL;
+	tokens[position] = NULL;
 	return (tokens);
 }
