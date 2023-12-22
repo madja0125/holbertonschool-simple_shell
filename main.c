@@ -2,9 +2,6 @@
 
 /**
  * main - Entry point for the shell.
- * @argc: Argument count.
- * @argv: Argument vector.
- * @env: Enviroment variables.
  *
  * Return: Status code.
 */
