@@ -37,7 +37,7 @@ int main(void)
 	}
 
 	if (read == -1)
-	putchar('\n');
+	/* putchar('\n'); */
 
 	free(line);
 	return (EXIT_SUCCESS);
