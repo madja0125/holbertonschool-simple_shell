@@ -20,6 +20,9 @@ int main(void)
 
 	while ((read = getline(&line, &len, stdin)) != -1)
 	{
+		if (read > 0 && line[read - 1] == '\n')
+		line[read -1] = '\0';
+		
 		if (is_empty(line))
 		{
 			if (isatty(STDIN_FILENO))
