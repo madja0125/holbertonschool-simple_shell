@@ -22,6 +22,7 @@ int main(void)
 
 		if (strcmp(line, "exit") == 0)
 		{
+			free(line);
 			break;
 		}
 
