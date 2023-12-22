@@ -9,7 +9,6 @@
 void execute(char *line)
 {
 	char **args;
-
 	pid_t pid = fork();
 
 	if (pid == -1)
@@ -19,6 +18,8 @@ void execute(char *line)
 	}
 	else if (pid == 0)
 	{
+		setenv("LC_ALL", "C", 1);
+		
 		args = parse_arguments(line);
 		execvp(args[0], args);
 		perror(args[0]);
